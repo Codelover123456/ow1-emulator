@@ -8,7 +8,7 @@ rule "[echo/duplicate.opy]: Initialize duplicate hero":
 
     wait(0.016)
     eventPlayer._hero_setup = eventPlayer.getHeroOfDuplication()
-    eventPlayer.setMaxHealth(eventPlayer.getHeroofDuplication())
+    # eventPlayer.setMaxHealth(eventPlayer.getHeroofDuplication()) original, changed to comment to prevent compile errors in Overwatch.
     resetHero()
     #wait(0.016)
     initHero()

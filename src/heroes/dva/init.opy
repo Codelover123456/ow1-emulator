@@ -10,13 +10,15 @@
 def initDva():
     @Name "[dva/init.opy]: initDva()"
     
-
     setUltCost(OW1_DVA_ULT_COST)
     # removeTankPassive()
-    #removeSelfHealing()
+    removeSelfHealing()
 
     # waitUntil(not eventPlayer.isInAlternateForm(), Math.INFINITY)
+    if not eventPlayer.isDuplicatingAHero():
     # setCustomHp(OW1_DVA_HEALTH, OW1_DVA_ARMOR, 0)
+    else:
+        logToInspector("Echo: Ignore dva init due to duplication")
 
     # setBaseDamage(eventPlayer, OW1_DVA_MICRO_MISSILES_DAMAGE/OW2_DVA_MICRO_MISSILES_DAMAGE)
 
