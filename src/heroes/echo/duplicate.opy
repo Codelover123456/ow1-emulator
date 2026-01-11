@@ -5,13 +5,18 @@ rule "[echo/duplicate.opy]: Initialize duplicate hero":
     @Event eachPlayer
     @Hero echo
     @Condition eventPlayer.isDuplicatingAHero()
-    
+
+    wait(0.016)
     eventPlayer._hero_setup = eventPlayer.getHeroOfDuplication()
+    # eventPlayer.setMaxHealth(eventPlayer.getHeroofDuplication()) original, changed to comment to prevent compile errors in Overwatch.
     resetHero()
+    #wait(0.016)
     initHero()
-    
-    resetSelfHealing()
-    removePassiveHealing()
+    #eventPlayer.setStatusEffect(null, Status.INVINCIBLE, 0.3)
+    #heal(eventPlayer, null, 600)
+
+    #resetSelfHealing()
+    #removePassiveHealing()
     enableAllAbilities()
 
 
