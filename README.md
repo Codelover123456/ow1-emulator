@@ -1,5 +1,7 @@
 ﻿# ow1-emulator
 
+This repository has been moved over to [Overwatch 1 Emulator](https://github.com/Overwatch-1-Emulator/ow1-emulator)
+
 This repository contains OverPy source code for building [Overwatch 1 Emulator](https://workshop.codes/KHTG0) and [Overwatch 1++](https://workshop.codes/YKMXH) Workshop gamemode.  
 
 Overwatch 1 stats are referenced using the [Wayback Machine](https://web.archive.org/web/20220929084035/https://overwatch.fandom.com/wiki/Overwatch_Wiki).  
@@ -57,3 +59,4 @@ See [releases](https://github.com/Overwatch-1-Emulator/ow1-emulator/releases)
 ## Contributing Code
 
 See [contribution guide](./CONTRIBUTING.md) for step by step instruction.
+
